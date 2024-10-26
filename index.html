@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>Zia's website</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <header>
+      <div style="padding-left:4em;padding-right:4em;">
+        <p style="font-size:3em;">Hello, I am</p>
+        <h1 style="font-size:7em;">Zia</h1>
+        <p style="font-size:3em;">a backend developer, tinkerer, and absolute nerd</p>
+      </div>
+    </header>
+
+    <main>
+      <div id="bio">
+        Hello, and welcome to my corner of the internet!
+        I am a human who happens to like coding, reading, and other things.
+        <br><br>
+        I like to use my skills to make fun things that can help people (mostly
+        CLIs). Almost everything I code is FLOSS software, meaning you can copy
+        it for yourself, help me make it, and more.
+        <br><br>
+        I also contribute to FLOSS software when I can.
+        <br><br>
+        My favorite coding languages are Go and C.
+      </div>
+
+      <hr>
+
+      <div id="code">
+        <pre>
+          <code>
+            type person struct {
+                Name            string
+                Pronouns        string
+                Hobbies         []string
+                HumanLanguages  []string
+                CodingLanguages []string
+            }
+
+            me := person{
+                Name:            "Zia",
+                Pronouns:        "he/him",
+                Hobbies:         []string{"Coding", "Reading", "Biking"},
+                HumanLanguages:  []string{"English", "French (fairly fluent)", "learning Spanish", "learning Urdu",
+                CodingLanguages: []string{"Go", "Java", "Python", "Bash", "JavaScript", "Typescript", "learning C", "and more",
+            }
+          </code>
+        </pre>
+      </div>
+    </main>
+    
+    <footer class="center">
+      <br><br><br>
+      <small>
+        <div id="links">
+          <!--<a href="https://matrix.to/#/{{.MatrixAccount}}">󰭹  Matrix</a>
+          •
+          <a href="mailto:{{.Email}}"><i class="bi-envelope"></i>󰇮  Email</a>
+          •-->
+          <!-- TODO: change this to git.domain when I get a website -->
+          <a href="https://github.com/Kaamkiya/kaamkiya.github.io">󰊢  Source Code</a>
+          •
+          <a href="https://github.com/Kaamkiya">󰊤  My GitHub</a>
+        </div>
+      </small>
+    </footer>
+  </body>
+</html>
