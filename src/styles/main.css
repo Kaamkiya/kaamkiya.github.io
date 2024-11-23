@@ -1,0 +1,45 @@
+@import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css");
+
+@font-face {
+  font-family: "Martian Mono";
+  src: url("/martianmono.woff2") format("woff2");
+}
+
+:root {
+  --background: #2f2f3f;
+  --overlay: color-mix(in srgb, var(--background), 20% black);
+  --text: #f2f2f2;
+  --link: #aaf;
+}
+
+html,body {
+  font-family: "Martian Mono", monospace;
+  font-size: 0.9em;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+header {
+  padding: 3em;
+}
+
+main {
+  padding: 3em;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 1em;
+  width: 100%;
+  background-color: var(--overlay);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: 2px dotted underline;
+}
