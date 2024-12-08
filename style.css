@@ -17,6 +17,8 @@ html,body {
   font-size: 0.9em;
   background-color: var(--background);
   color: var(--text);
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -42,4 +44,8 @@ a {
 }
 a:hover {
   text-decoration: 2px dotted underline;
+}
+
+.links {
+  font-size: 2em;
 }
