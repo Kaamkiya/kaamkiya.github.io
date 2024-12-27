@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Martian Mono";
-  src: url("https://kaamkiya.github.io/martianmono.woff2") format("woff2");
+  font-family: "JetBrains Mono";
+  src: url("/jetbrainsmono.ttf");
 }
 
 html,
@@ -10,7 +10,7 @@ body {
   margin-right: 15%;
   background: #cdd6f4;
   color: #11111b;
-  font-family: "Martian Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 0.9em;
 }
 
