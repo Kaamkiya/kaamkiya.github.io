@@ -3,14 +3,24 @@
   src: url("/jetbrainsmono.ttf");
 }
 
+:root {
+  /* Fonts */
+  --font-mono: "JetBrains Mono";
+
+  /* Colors */
+  --col-bg: #eff1f5;
+  --col-fg: #11111b;
+  --col-accent: #1e66f5;
+}
+
 html,
 body {
   max-width: 70%;
   margin-left: 15%;
   margin-right: 15%;
-  background: #cdd6f4;
-  color: #11111b;
-  font-family: "JetBrains Mono", monospace;
+  background: var(--col-bg);
+  color: var(--col-fg);
+  font-family: var(--font-mono);
   font-size: 0.9em;
 }
 
@@ -19,7 +29,7 @@ main {
 }
 
 a {
-  color: #1e66f5;
+  color: var(--col-accent);
 }
 
 nav ul {
@@ -31,8 +41,7 @@ nav ul {
 }
 
 .project {
-  background: #7287fd33;
-  /*border: 2px solid #7287fd77;*/
+  background: #9ca0b0;
   border-radius: 1em;
   margin-top: 1em;
   padding: 0.7em;
