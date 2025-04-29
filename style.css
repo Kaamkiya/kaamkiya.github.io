@@ -1,16 +1,13 @@
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("/jetbrainsmono.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
   /* Fonts */
-  --font-mono: "JetBrains Mono";
+  --font-mono: "Source Code Pro";
 
   /* Colors */
-  --col-bg: #dfe1f5;
+  --col-bg: #fff2f2;
   --col-fg: #11111b;
-  --col-accent: #1e66f5;
+  --col-accent: #651fff;
 }
 
 html,
@@ -21,7 +18,6 @@ body {
   background: var(--col-bg);
   color: var(--col-fg);
   font-family: var(--font-mono);
-  font-size: 0.9em;
 }
 
 main {
@@ -53,4 +49,5 @@ nav ul {
 
 .carousel {
   text-decoration: underline;
+  cursor: pointer;
 }
