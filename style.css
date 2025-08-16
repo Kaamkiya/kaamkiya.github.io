@@ -2,12 +2,13 @@
 
 :root {
   /* Fonts */
-  --font-mono: "Source Code Pro";
+  --font: Inter, sans-serif;
+  --font-mono: "Source Code Pro", monospace;
 
   /* Colors */
-  --col-bg: #fff2f2;
-  --col-fg: #11111b;
-  --col-accent: #651fff;
+  --col-bg: #111111;
+  --col-fg: #e8e8e8;
+  --col-accent: #be99ff;
 }
 
 html,
@@ -15,13 +16,19 @@ body {
   max-width: 70%;
   margin-left: 15%;
   margin-right: 15%;
+  margin-top: 5%;
   background: var(--col-bg);
   color: var(--col-fg);
-  font-family: var(--font-mono);
+  font-family: var(--font);
+  font-size: .9375rem;
 }
 
 main {
   padding-left: 5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-mono);
 }
 
 a {
@@ -37,17 +44,23 @@ nav ul {
 }
 
 .project {
-  background: #cfd1e5;
+  background: color-mix(in srgb, black, var(--col-accent) 20%);
   border-radius: 1em;
   margin-top: 1em;
   padding: 0.7em;
 }
 
 .stack {
-  color: #11111b55;
+  color: color-mix(in srgb, black, var(--col-fg) 75%);
 }
 
 .carousel {
-  text-decoration: underline;
+  text-decoration: var(--col-accent) wavy underline 0.01rem;
   cursor: pointer;
+}
+
+.social {
+  width: 1.3em;
+  height: 1.3em;
+  padding: 0.2em;
 }
