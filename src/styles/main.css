@@ -23,14 +23,20 @@ body {
   background: var(--col-bg);
   color: var(--col-fg);
   font-family: var(--font);
-  font-size: .9375rem;
+  font-size: 0.95rem;
+  line-height: 1.75;
 }
 
 main {
   padding-left: 5%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-mono);
 }
 
@@ -38,32 +44,11 @@ a {
   color: var(--col-accent);
 }
 
-nav ul {
-  list-style: none;
-}
-
 .container {
   display: flex;
-}
-
-.project {
-  background: color-mix(in srgb, black, var(--col-accent) 20%);
-  border-radius: 1em;
-  margin-top: 1em;
-  padding: 0.7em;
-}
-
-.stack {
-  color: color-mix(in srgb, black, var(--col-fg) 75%);
 }
 
 .carousel {
   text-decoration: var(--col-accent) wavy underline 0.01rem;
   cursor: pointer;
-}
-
-.social {
-  width: 1.3em;
-  height: 1.3em;
-  padding: 0.2em;
 }

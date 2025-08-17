@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Project from "../components/Project.astro";
+---
+
+<Layout>
+  <h1>
+    My <span class="carousel" values="Projects,Masterpieces,Works"
+      >Projects</span
+    >
+  </h1>
+  <div>
+    <Project
+      link="https://github.com/Kaamkiya/gg"
+      name="gg"
+      description="A collection of well-known games you can play in your terminal, like 2048, hangman, and connect 4."
+      stack="Go"
+    />
+    <Project
+      link="https://github.com/Kaamkiya/kwinit"
+      name="kwinit"
+      description="A CLI to easily scaffold all kinds of coding projects quickly."
+      stack="Go"
+    />
+    <Project
+      link="https://github.com/Kaamkiya/kabin"
+      name="kabin"
+      description="A pastebin, useful for sharing all sorts of code over the internet."
+      stack="Go - SQLite"
+    />
+    <Project
+      link="https://github.com/Kaamkiya/bfc"
+      name="bfc"
+      description="A tiny brainf**k to C transpiler, written in C."
+      stack="C"
+    />
+    <Project
+      link="https://kaamkiya.github.io/ascii-webcam"
+      name="ascii webcam"
+      description="Your webcam as ASCII art."
+      stack="JavaScript - p5js"
+    />
+  </div>
+</Layout>

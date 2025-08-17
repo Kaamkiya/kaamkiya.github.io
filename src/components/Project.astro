@@ -1,0 +1,23 @@
+---
+import "../styles/main.css";
+
+const { link, name, description, stack } = Astro.props;
+---
+
+<div class="project">
+  <h3><a href={link}>{name}</a></h3>
+  <p>{description}</p>
+  <small>{stack}</small>
+</div>
+
+<style>
+  stack {
+    color: color-mix(in srgb, black, var(--col-fg) 75%);
+  }
+  .project {
+    background: color-mix(in srgb, black, var(--col-accent) 20%);
+    border-radius: 1em;
+    margin-top: 1em;
+    padding: 0.7em;
+  }
+</style>
