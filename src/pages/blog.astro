@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 const posts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
 ---
 
-<Layout>
+<Layout title="Blog">
   <h1>
     My <span class="carousel" values="Ramblings,Blog Posts">Blog Posts</span>
   </h1>
