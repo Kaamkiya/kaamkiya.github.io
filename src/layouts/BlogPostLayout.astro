@@ -13,10 +13,11 @@ const { frontmatter } = Astro.props;
     <em>
       Published: {frontmatter.pubDate.toString().slice(0, 10)}
       {
-        frontmatter.editDate !== undefined &&
+        frontmatter.editDate !== undefined && (
           <span>
             &bullet; Edited: {frontmatter.editDate.toString().slice(0, 10)}
           </span>
+        )
       }
     </em>
   </p>

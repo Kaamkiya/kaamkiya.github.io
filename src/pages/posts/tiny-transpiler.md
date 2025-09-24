@@ -6,8 +6,8 @@ editDate: 2025-09-23
 description: "A tiny Brainfuck to C transpiler written in 40 lines of C."
 author: "Zia M <ziam3.1415@gmail.com>"
 image:
-    url: "https://docs.astro.build/assets/rose.webp"
-    alt: "Brainfuck example code"
+  url: "https://docs.astro.build/assets/rose.webp"
+  alt: "Brainfuck example code"
 tags: ["c", "sideprojects", "fun", "brainfuck"]
 ---
 
@@ -70,11 +70,11 @@ interpreters, so I thought the world needed a brainfuck compiler.
 
 Many reasons:
 
-* I want more practice with it
-* It's fast
-* It's mostly portable
-* It's widespread
-* I didn't need much code anyway.
+- I want more practice with it
+- It's fast
+- It's mostly portable
+- It's widespread
+- I didn't need much code anyway.
 
 And one final reason: integer overflow. Normally, this is a bad thing that
 people hate. It's probably the reason unit tests (ugh) were invented. But
@@ -86,9 +86,10 @@ I didn't need to write any code for it.
 ### How?
 
 A higher-level overview:
-* Read code from a file or from stdin into memory
-* Convert each character to C code
-* Print the finished C code.
+
+- Read code from a file or from stdin into memory
+- Convert each character to C code
+- Print the finished C code.
 
 It reads brainfuck code from a file into `code[]`.
 
@@ -110,7 +111,7 @@ Next, it loops over the `code` array, which is an array of single characters.
 For each character, it converts it to C code:
 
 | character | becomes            |
-|-----------|--------------------|
+| --------- | ------------------ |
 | `>`       | `p++`              |
 | `<`       | `p--`              |
 | `-`       | `t[p]--`           |
@@ -119,7 +120,6 @@ For each character, it converts it to C code:
 | `,`       | `t[p]=getchar()`   |
 | `[`       | `while(t[p] != 0)` |
 | `]`       | `}`                |
-
 
 > You can see above to understand what these symbols do.
 
