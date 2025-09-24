@@ -5,5 +5,7 @@ import icon from "astro-icon";
 
 export default defineConfig({
   site: "https://kaamkiya.github.io",
-  integrations: [icon()],
+  integrations: [icon({
+    "simple-icons": ["github", "matrix", "mastodon"],
+  })],
 });
