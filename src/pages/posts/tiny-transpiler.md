@@ -142,7 +142,7 @@ think there's much I could do to make it faster, but there are things I could
 do to make it safer and better.
 
 You can see the final code
-[here](https://codeberg.org/Kaamkiya/bfc/branch/main/bfc.c).
+[here](https://codeberg.org/Kaamkiya/bfc/src/branch/main/bfc.c).
 
 You can also make any sort of contribution, if you'd like.
 
