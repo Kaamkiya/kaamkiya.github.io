@@ -109,9 +109,8 @@ readable.
 Next, it loops over the `code` array, which is an array of single characters.
 For each character, it converts it to C code:
 
-|           |                    |
-|-----------|--------------------|
 | character | becomes            |
+|-----------|--------------------|
 | `>`       | `p++`              |
 | `<`       | `p--`              |
 | `-`       | `t[p]--`           |
