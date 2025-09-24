@@ -1,0 +1,76 @@
+---
+import "../styles/main.css";
+
+import Nav from "../components/Nav.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Primary Meta Tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="The website of a backend developer named Zia. I like to code in Go, and eat chocolate."
+    />
+    <meta
+      name="keywords"
+      content="programming,coding,backend,developer,portfolio,programmer,golang,go"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="index,follow" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Zia M" />
+    <meta property="og:description" content="Zia's corner of the internet." />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/138614660?v=4"
+    />
+    <meta property="og:url" content="https://kaamkiya.github.io/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Zia M" />
+    <meta
+      name="twitter:description"
+      content="The website of a backend developer who likes to code in Go and eat chocolate."
+    />
+    <meta
+      name="twitter:image"
+      content="https://avatars.githubusercontent.com/u/138614660?v=4"
+    />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>{frontmatter.title} | Zia M</title>
+  </head>
+  <body>
+    <div class="container">
+      <Nav />
+      <main>
+        <h1>{frontmatter.title}</h1>
+        <p>
+          <em>
+            Published: {frontmatter.pubDate.toString().slice(0, 10)}
+            {
+              frontmatter.editDate !== undefined &&
+                <span>
+                  &bullet; Edited: {frontmatter.editDate.toString().slice(0, 10)}
+                </span>
+            }
+          </em>
+        </p>
+        <slot />
+      </main>
+    </div>
+
+    <script src="../scripts/index.js"></script>
+  </body>
+</html>
