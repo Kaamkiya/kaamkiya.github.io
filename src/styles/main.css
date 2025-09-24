@@ -44,6 +44,12 @@ a {
   color: var(--col-accent);
 }
 
+blockquote {
+  border-left: 2px solid var(--col-accent);
+  margin: 0;
+  padding-left: 2em;
+}
+
 .container {
   display: flex;
 }
