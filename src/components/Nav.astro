@@ -1,5 +1,6 @@
 ---
 import "../styles/main.css";
+import { Icon } from "astro-icon/components";
 ---
 
 <nav>
@@ -12,30 +13,17 @@ import "../styles/main.css";
   <ul class="container">
     <li>
       <a target="_blank" href="https://github.com/Kaamkiya">
-        <img
-          class="social"
-          src="https://cdn.simpleicons.org/github/white"
-          alt="Github"
-        />
+        <Icon class="social" name="simple-icons:github" />
       </a>
     </li>
     <li>
       <a target="_blank" href="https://mementomori.social/@zm">
-        <img
-          class="social"
-          src="https://cdn.simpleicons.org/mastodon/white"
-          alt="Mastodon"
-        />
+        <Icon class="social" name="simple-icons:mastodon" />
       </a>
     </li>
     <li>
       <a target="_blank" href="https://matrix.to/#/@zia.m:matrix.org">
-        <img
-          class="social"
-          target="_blank"
-          src="https://cdn.simpleicons.org/matrix/white"
-          alt="Matrix"
-        />
+        <Icon class="social" name="simple-icons:matrix" />
       </a>
     </li>
   </ul>
@@ -44,6 +32,10 @@ import "../styles/main.css";
 <style>
   nav ul {
     list-style: none;
+  }
+
+  [data-icon] {
+    color: var(--col-fg);
   }
 
   .social {
