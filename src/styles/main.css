@@ -8,23 +8,31 @@
   --font: Inter, sans-serif;
   --font-mono: "Jet Brains Mono", monospace;
 
-  /* Colors */
   --col-bg: #1c1c1c;
   --col-fg: #e8e8e8;
   --col-accent: #be99ff;
 }
 
+.light {
+  --col-bg: #e8e8e8;
+  --col-fg: #1c1c1c;
+  --col-accent: #6600dd;
+}
+
 html,
 body {
-  max-width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 5%;
   background: var(--col-bg);
   color: var(--col-fg);
   font-family: var(--font);
   font-size: 0.95rem;
   line-height: 1.75;
+}
+
+div#container {
+  max-width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
 }
 
 main {

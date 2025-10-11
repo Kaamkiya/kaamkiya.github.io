@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <!-- Primary Meta Tags -->
     <meta charset="utf-8" />
@@ -52,7 +52,7 @@ const { title } = Astro.props;
     <title>{title && title + " | "} Zia M</title>
   </head>
   <body>
-    <div class="container">
+    <div id="container" class="container">
       <Nav />
       <main>
         <slot />

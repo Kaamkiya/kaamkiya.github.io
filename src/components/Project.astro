@@ -12,10 +12,10 @@ const { link, name, description, stack } = Astro.props;
 
 <style>
   stack {
-    color: color-mix(in srgb, black, var(--col-fg) 75%);
+    color: color-mix(in srgb, var(--col-bg), var(--col-fg) 75%);
   }
   .project {
-    background: color-mix(in srgb, black, var(--col-accent) 20%);
+    background: color-mix(in srgb, var(--col-bg), var(--col-accent) 20%);
     border-radius: 1em;
     margin-top: 1em;
     padding: 0.7em;
