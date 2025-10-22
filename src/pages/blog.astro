@@ -13,7 +13,12 @@ const posts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
     {
       posts.map((post: any) => (
         <li>
-          <a href={post.url}>{post.frontmatter.title}</a>
+          <a href={post.url}>
+            {post.frontmatter.title} -
+            <em>
+              {post.frontmatter.pubDate.toString().slice(0, 10)}
+            </em>
+          </a>
         </li>
       ))
     }
