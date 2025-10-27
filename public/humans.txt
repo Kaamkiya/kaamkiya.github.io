@@ -1,0 +1,10 @@
+/* TEAM */
+	Me: Zia M
+	Site: https://kaamkiya.github.io
+	Mastodon: https://mementomori.social/@zm
+	Location: Canada
+
+/* SITE */
+	Language: English
+	Doctype: HTML5
+	Tech: JavaScript, TypeScript, Astro, GitHub
