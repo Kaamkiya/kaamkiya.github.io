@@ -3,6 +3,30 @@
   src: url(/jetbrainsmono.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (width <= 600px) {
+  .container {
+    display: block !important;
+  }
+
+  #links {
+    display: flex;
+  }
+  #links li {
+    padding: 1em;
+  }
+
+  #themes {
+    display: flex;
+  }
+  .themeoption {
+    padding: 1em;
+  }
+}
+
 :root {
   /* Fonts */
   --font: Inter, sans-serif;
@@ -35,6 +59,7 @@ div#container {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 5%;
+  display: flex;
 }
 
 main {
@@ -60,7 +85,7 @@ blockquote {
   padding-left: 2em;
 }
 
-.container {
+.flex {
   display: flex;
 }
 

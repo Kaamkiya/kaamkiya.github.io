@@ -4,14 +4,14 @@ import { Icon } from "astro-icon/components";
 ---
 
 <nav>
-  <ul>
+  <ul id="links">
     <li><a href="/">Home</a></li>
     <li><a href="/projects/">Projects</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/now/">Now</a></li>
   </ul>
 
-  <ul class="container">
+  <ul id="socials" class="flex">
     <li>
       <a target="_blank" href="https://github.com/Kaamkiya">
         <Icon class="social" name="simple-icons:github" />
@@ -29,7 +29,7 @@ import { Icon } from "astro-icon/components";
     </li>
   </ul>
 
-  <ul>
+  <ul id="themes">
     <li class="themeoption">Dark</li>
     <li class="themeoption">Light</li>
     <li class="themeoption">Plain</li>
