@@ -1,4 +1,9 @@
 @font-face {
+  font-family: "Okta Neue";
+  src: url(/oktaneue.woff2) format(woff2);
+}
+
+@font-face {
   font-family: "Jet Brains Mono";
   src: url(/jetbrainsmono.ttf);
 }
@@ -29,7 +34,7 @@
 
 :root {
   /* Fonts */
-  --font: Inter, sans-serif;
+  --font: "Okta Neue", Inter, sans-serif;
   --font-mono: "Jet Brains Mono", monospace;
 }
 
