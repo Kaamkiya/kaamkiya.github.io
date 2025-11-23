@@ -17,6 +17,12 @@
     display: block !important;
   }
 
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #links {
     display: flex;
   }
@@ -25,10 +31,7 @@
   }
 
   #themes {
-    display: flex;
-  }
-  .themeoption {
-    padding: 1em;
+    display: none;
   }
 }
 
