@@ -58,7 +58,6 @@ body {
   background: var(--col-bg);
   color: var(--col-fg);
   font-family: var(--font);
-  font-size: 0.95rem;
   line-height: 1.75;
 }
 
