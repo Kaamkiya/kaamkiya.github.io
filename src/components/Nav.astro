@@ -8,26 +8,9 @@ import { Icon } from "astro-icon/components";
     <li><a href="/">Home</a></li>
     <li><a href="/projects/">Projects</a></li>
     <li><a href="/blog/">Blog</a></li>
+    <li><a href="/links/">Links</a></li>
     <li><a href="/now/">Now</a></li>
     <li><a href="/colophon/">Colophon</a></li>
-  </ul>
-
-  <ul id="socials" class="flex">
-    <li>
-      <a target="_blank" href="https://github.com/Kaamkiya">
-        <Icon class="social" name="simple-icons:github" />
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://mementomori.social/@zm">
-        <Icon class="social" name="simple-icons:mastodon" />
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://matrix.to/#/@zia.m:matrix.org">
-        <Icon class="social" name="simple-icons:matrix" />
-      </a>
-    </li>
   </ul>
 </nav>
 
@@ -35,14 +18,9 @@ import { Icon } from "astro-icon/components";
   nav ul {
     list-style: none;
   }
-
-  [data-icon] {
-    color: var(--col-fg);
-  }
-
-  .social {
-    width: 1.3em;
-    height: 1.3em;
-    padding: 0.2em;
+  @media (width <= 600px) {
+    nav ul li {
+      padding: 0.5rem !important;
+    }
   }
 </style>
