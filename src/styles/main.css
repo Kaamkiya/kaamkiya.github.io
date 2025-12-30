@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Jet Brains Mono";
-  src: url(/jetbrainsmono.ttf);
+  src: url(/jetbrainsmono.woff2) format(woff2);
 }
 
 * {
@@ -29,25 +29,20 @@
   #links li {
     padding: 1em;
   }
-
-  #themes {
-    display: none;
-  }
 }
 
 :root {
   /* Fonts */
   --font: Outfit, Inter, sans-serif;
   --font-mono: "Jet Brains Mono", monospace;
-}
 
-.dark {
   --col-bg: #1a1e26;
   --col-fg: #e8e8e8;
   --col-accent: #be99ff;
 }
 
-.light {
+/* TODO: Fix color scheme; is always dark */
+@media (prefers-color-scheme: light) {
   --col-bg: #e8e8e8;
   --col-fg: #1c1c1c;
   --col-accent: #6600dd;

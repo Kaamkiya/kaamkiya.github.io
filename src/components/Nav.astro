@@ -9,6 +9,7 @@ import { Icon } from "astro-icon/components";
     <li><a href="/projects/">Projects</a></li>
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/now/">Now</a></li>
+    <li><a href="/colophon/">Colophon</a></li>
   </ul>
 
   <ul id="socials" class="flex">
@@ -28,12 +29,6 @@ import { Icon } from "astro-icon/components";
       </a>
     </li>
   </ul>
-
-  <ul id="themes">
-    <li class="themeoption">Dark</li>
-    <li class="themeoption">Light</li>
-    <li class="themeoption">Plain</li>
-  </ul>
 </nav>
 
 <style>
@@ -50,42 +45,4 @@ import { Icon } from "astro-icon/components";
     height: 1.3em;
     padding: 0.2em;
   }
-
-  .themeoption {
-    cursor: pointer;
-  }
-  .themeoption.active {
-    color: var(--col-accent);
-  }
-  .themeoption.active::before {
-    content: "• ";
-  }
 </style>
-
-<script is:inline>
-  const themeOptions = document.querySelectorAll(".themeoption");
-
-  const setTheme = name => {
-    themeOptions.forEach(e => e.classList.remove("active"));
-    localStorage.setItem("theme", name);
-    document.documentElement.className = name;
-  }
-  const getTheme = () => {
-    return localStorage.getItem("theme");
-  }
-
-  if (!getTheme()) setTheme("dark");
-  else setTheme(getTheme());
-  themeOptions.forEach(e => {
-    if (e.innerText.toLowerCase() == getTheme()) {
-      e.classList.add("active");
-    }
-  });
-
-  themeOptions.forEach(e => {
-    e.onclick = () => {
-      setTheme(e.innerText.toLowerCase());
-      e.classList.add("active");
-    }
-  });
-</script>
