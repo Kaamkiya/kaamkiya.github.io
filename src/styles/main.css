@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Okta Neue";
-  src: url(/oktaneue.woff2) format(woff2);
+  font-family: Outfit;
+  src: url(/outfit.woff2) format(woff2);
 }
 
 @font-face {
@@ -37,12 +37,12 @@
 
 :root {
   /* Fonts */
-  --font: "Okta Neue", Inter, sans-serif;
+  --font: Outfit, Inter, sans-serif;
   --font-mono: "Jet Brains Mono", monospace;
 }
 
 .dark {
-  --col-bg: #1c1c1c;
+  --col-bg: #1a1e26;
   --col-fg: #e8e8e8;
   --col-accent: #be99ff;
 }
