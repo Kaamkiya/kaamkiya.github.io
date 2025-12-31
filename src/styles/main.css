@@ -87,6 +87,21 @@ blockquote {
   padding-left: 2em;
 }
 
+pre, code {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+code {
+  background-color: color-mix(in srgb, var(--col-fg), var(--col-bg) 85%);
+  border-radius: 0.7rem;
+}
+
+pre code {
+  background: none;
+  border-radius: none;
+}
+
 .flex {
   display: flex;
 }
