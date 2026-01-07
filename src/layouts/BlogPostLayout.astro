@@ -8,6 +8,7 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
+  <meta name="fediverse:creator" content="@zm@mementomori.social">
   <h1>{frontmatter.title}</h1>
   <p>
     <em>
