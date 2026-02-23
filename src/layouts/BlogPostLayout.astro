@@ -3,6 +3,7 @@ import "../styles/main.css";
 
 import Layout from "./Layout.astro";
 import Nav from "../components/Nav.astro";
+import DateText from "../components/DateText.astro";
 
 const { frontmatter } = Astro.props;
 ---
@@ -12,14 +13,11 @@ const { frontmatter } = Astro.props;
   <h1>{frontmatter.title}</h1>
   <p>
     <em>
-      {new Date(frontmatter.pubDate).toLocaleString("en-US", {year: "numeric", month: "short", day: "numeric"})}
+      <DateText date={frontmatter.pubDate} />
       {
         frontmatter.editDate !== undefined && (
           <span>
-            &bullet; Edited {
-              new Date(frontmatter.pubDate)
-                .toLocaleString("en-US", {year: "numeric", month: "short", day: "numeric"})
-            }
+            &bullet; Edited <DateText date={frontmatter.editDate} />
           </span>
         )
       }
