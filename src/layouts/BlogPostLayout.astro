@@ -16,7 +16,10 @@ const { frontmatter } = Astro.props;
       {
         frontmatter.editDate !== undefined && (
           <span>
-            &bullet; Edited: {frontmatter.editDate.toString().slice(0, 10)}
+            &bullet; Edited {
+              new Date(frontmatter.pubDate)
+                .toLocaleString("en-US", {year: "numeric", month: "short", day: "numeric"})
+            }
           </span>
         )
       }
