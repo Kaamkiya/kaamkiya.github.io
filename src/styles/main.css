@@ -88,7 +88,9 @@ pre, code {
 
 code {
   background-color: color-mix(in srgb, var(--col-fg), var(--col-bg) 85%);
-  border-radius: 0.7rem;
+  border-radius: 0.25rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
 }
 
 pre code {
