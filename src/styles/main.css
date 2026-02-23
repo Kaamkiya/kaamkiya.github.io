@@ -33,19 +33,13 @@
 
 :root {
   /* Fonts */
-  --font: Outfit, Inter, sans-serif;
+  --font: Outfit, sans-serif;
   --font-mono: "Jet Brains Mono", monospace;
 
-  --col-bg: #1a1e26;
-  --col-fg: #e8e8e8;
-  --col-accent: #be99ff;
-}
-
-/* TODO: Fix color scheme; is always dark */
-@media (prefers-color-scheme: light) {
-  --col-bg: #e8e8e8;
-  --col-fg: #1c1c1c;
-  --col-accent: #6600dd;
+  color-scheme: light dark;
+  --col-bg: #eee;
+  --col-fg: #222;
+  --col-accent: #446;
 }
 
 html,
