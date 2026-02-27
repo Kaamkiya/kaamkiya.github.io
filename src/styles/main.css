@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Outfit;
-  src: url(/outfit.woff2) format(woff2);
+  font-family: Rubik;
+  src: url(/rubik.ttf) format(ttf);
 }
 
 @font-face {
@@ -33,7 +33,7 @@
 
 :root {
   /* Fonts */
-  --font: Outfit, sans-serif;
+  --font: Rubik, sans-serif;
   --font-mono: "Jet Brains Mono", monospace;
 
   color-scheme: light dark;
