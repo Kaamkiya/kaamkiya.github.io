@@ -13,21 +13,12 @@
 }
 
 @media screen and (width <= 600px) {
-  .container {
+  h1 {
+    text-align: center;
+  }
+
+  div#container {
     display: block !important;
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #links {
-    display: flex;
-  }
-  #links li {
-    padding: 1em;
   }
 }
 
@@ -39,7 +30,7 @@
   color-scheme: light dark;
   --col-bg: #eee;
   --col-fg: #222;
-  --col-accent: #446;
+  --col-accent: #223;
 }
 
 html,

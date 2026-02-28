@@ -10,7 +10,7 @@ import { Icon } from "astro-icon/components";
     <li><a href="/blog/">Blog</a></li>
     <li><a href="/links/">Links</a></li>
     <li><a href="/now/">Now</a></li>
-    <li><a href="/colophon/">Colophon</a></li>
+    <!--<li><a href="/colophon/">Colophon</a></li>-->
   </ul>
 </nav>
 
@@ -21,6 +21,17 @@ import { Icon } from "astro-icon/components";
   @media (width <= 600px) {
     nav ul li {
       padding: 0.5rem !important;
+    }
+
+    #links {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+      font-weight: bold;
+    }
+
+    #links li {
+      padding: 1em;
     }
   }
 </style>
