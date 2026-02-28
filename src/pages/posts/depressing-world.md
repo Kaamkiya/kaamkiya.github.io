@@ -40,5 +40,7 @@ there definitely is some in the world and I want to know about it as well.
 Thanks for reading!
 
 [^1]: [An article that made me feel sad](https://www.techradar.com/pro/security/massive-global-data-breach-sees-over-a-billion-records-exposed-heres-what-we-know-so-far)
+
 [^2]: [A study about negative news](https://www.psychologytoday.com/gb/blog/common-sense-science/202503/why-are-we-captivated-by-bad-news)
+
 [^3]: [The Indie Web](https://indieweb.org)
