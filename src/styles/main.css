@@ -43,15 +43,19 @@ body {
 }
 
 div#container {
-  max-width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  max-width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
   margin-top: 5%;
-  display: flex;
 }
 
-main {
-  padding-left: 5%;
+@media (width <= 600px) {
+  div#container {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
 }
 
 h1,
