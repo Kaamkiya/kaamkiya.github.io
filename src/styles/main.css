@@ -30,7 +30,8 @@
   color-scheme: light dark;
   --col-bg: #eee;
   --col-fg: #222;
-  --col-accent: #223;
+  --col-accent: #174232;
+  --col-accent-mono: #223;
 }
 
 html,
