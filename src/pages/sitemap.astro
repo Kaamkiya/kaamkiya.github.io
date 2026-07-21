@@ -1,0 +1,49 @@
+---
+import Layout from "../layouts/Layout.astro";
+import DateText from "../components/DateText.astro";
+
+import "../styles/main.css";
+
+const slashes = [
+  {link: "/", desc: "The home page."},
+  {link: "/blank", desc: "This page intentionally left blank."},
+  {link: "/blog", desc: "A listing of all my blog posts."},
+  {link: "/colophon", desc: "Credits and resources used to make this website."},
+  {link: "/links", desc: "Links to my accounts on other platforms."},
+  {link: "/now", desc: "Things I'm doing currently."},
+  {link: "/projects", desc: "A listing of several of my coding projects."},
+];
+---
+
+<Layout title="Sitemap">
+  <h1>
+    Sitemap
+  </h1>
+
+  <ul>
+    {
+      slashes.map(page => {
+        return <li>
+          <a href={page.link}>{page.link}</a>
+          <span class="desc">{page.desc}</span>
+        </li>
+      })
+    }
+  </ul>
+</Layout>
+
+<style>
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+
+  .desc {
+    color: var(--col-accent-mono);
+  }
+</style>
