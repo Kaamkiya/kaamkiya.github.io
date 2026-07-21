@@ -1,7 +1,11 @@
 for (let e of document.querySelectorAll(".carousel")) {
   e.onclick = () => {
     let v = e.getAttribute("values").split(",");
-    e.innerText = v[Math.floor(Math.random() * v.length)];
+    let s = v[Math.floor(Math.random() * v.length)];
+    while (s == e.innerText) {
+      s = v[Math.floor(Math.random() * v.length)];
+    }
+    e.innerText = s;
   };
 }
 
