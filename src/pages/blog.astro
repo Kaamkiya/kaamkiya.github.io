@@ -2,12 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import DateText from "../components/DateText.astro";
 
+import "../styles/main.css";
+
 const posts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
 ---
 
 <Layout title="Blog">
   <h1>
-    My <span class="carousel" values="Ramblings,Blog Posts">Blog Posts</span>
+    My <span class="carousel" values="Ramblings,Posts">Posts</span>
   </h1>
 
   <ul>
@@ -19,15 +21,32 @@ const posts = Object.values(import.meta.glob("./posts/*.md", { eager: true }));
             Date.parse(a.frontmatter.pubDate),
         )
         .map((post: any) => (
-          <li>
-            <a href={post.url}>
-              {post.frontmatter.title} -
-              <em>
+          <a href={post.url}>
+            <li>
+              {post.frontmatter.title}
+              <span class="datetext">
                 <DateText date={post.frontmatter.pubDate} />
-              </em>
-            </a>
-          </li>
+              </span>
+            </li>
+          </a>
         ))
     }
   </ul>
 </Layout>
+
+<style>
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    display: grid;
+    grid-template-columns: 80% 20%;
+  }
+
+  .datetext {
+    color: var(--col-accent-mono);
+    text-align: right;
+  }
+</style>
