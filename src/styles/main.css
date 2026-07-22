@@ -29,9 +29,9 @@
 
   color-scheme: light dark;
   --col-bg: #dcefea;
-  --col-fg: #222;
+  --col-fg: #0f0f0f;
   --col-accent: #174232;
-  --col-accent-mono: #446;
+  --col-accent-mono: #223;
 }
 
 html,
