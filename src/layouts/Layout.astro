@@ -2,6 +2,7 @@
 import "../styles/main.css";
 
 import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
 
 const { title } = Astro.props;
 ---
@@ -60,6 +61,7 @@ const { title } = Astro.props;
       <main>
         <slot />
       </main>
+      <Footer />
     </div>
 
     <script src="../scripts/index.js"></script>
