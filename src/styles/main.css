@@ -32,6 +32,7 @@
   --col-fg: #0f0f0f;
   --col-accent: #174232;
   --col-accent-mono: #223;
+
 }
 
 html,
@@ -40,6 +41,8 @@ body {
   color: var(--col-fg);
   font-family: var(--font);
   line-height: 1.75;
+  height:100%;
+  cursor: url(/cursor.png), auto;
 }
 
 div#container {
