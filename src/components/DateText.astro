@@ -4,10 +4,6 @@ const { date } = Astro.props;
 
 <span class="datetext">
   {
-    new Date(date).toLocaleString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    })
+    new Date(date).toISOString().split("T")[0]
   }
 </span>
