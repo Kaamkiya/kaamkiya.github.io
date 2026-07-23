@@ -1,5 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+interface Badge {
+  filename: string;
+  alt: string;
+  link?: string;
+}
+
+const myBadges: Array<Badge> = [
+  {filename: "kaamkiya.png", alt: "it's me, kaamkiya :)"},
+  {filename: "kaamkiya.gif", alt: "it's me, kaamkiya :)"},
+  {filename: "est2024.png",  alt: "this website was established in 2024"},
+  {filename: "he-him.gif",   alt: "my pronouns are he/him"}
+];
+// const otherBadges: Array<Badge> = []; // this will be for sites that link back to me
+const randomBadges: Array<Badge> = [
+  {filename: "archlinux.gif", alt: "I use Arch btw", link: "https://archlinux.org/"},
+  {filename: "canada.gif", alt: "Canada"},
+  {filename: "indieweb.png", alt: "This site is part of the Indie Web", link: "https://indieweb.org/"},
+  {filename: "internetarchive.png", alt: "The Internet Archive", link: "https://archive.org/"},
+  {filename: "iso8601.png", alt: "The best date format is YYYY-MM-DD", link: "https://iso8601.com/"},
+  {filename: "nocookie.gif", alt: "This site uses zero cookies"},
+  {filename: "noerror.gif", alt: "Error? What error?"},
+  {filename: "right2repair.png", alt: "I support the right to repair"},
+  {filename: "underconstruction.gif", alt: "This website is permanently under construction"},
+  {filename: "wikipedia.gif", alt: "Wikipedia rocks", link: "https://wikipedia.org/"},
+  {filename: "www.gif", alt: "The World Wide Web, connecting people since 1991"},
+  {filename: "emailme.gif", alt: "Email me! kaki@envs.net", link: "/contact"},
+  {filename: "envsnet.png", alt: "envs.net", link: "https://envs.net"},
+  {filename: "tildetown.gif", alt: "tilde.town", link: "https://tilde.town"},
+  {filename: "firefox.gif", alt: "Firefox", link: "https://firefox.org"},
+  {filename: "carpe_diem.gif", alt: "Carpe diem"},
+  {filename: "littlepixellibrary.png", alt: "The Little Pixel Library", link: "https://hillhouse.neocities.org/cliques/library/"},
+  {filename: "people_pledge.png", alt: "The People Pledge", link: "https://people.pledge.party"},
+  {filename: "andycarolan_madebyahuman.png", alt: "Made by a human"},
+];
 ---
 
 <Layout title="Web Buttons/Badges">
@@ -8,35 +43,26 @@ import Layout from "../layouts/Layout.astro";
     A bunch of web badges I've collected from the internet or made myself.
   </h4>
   <div class="badges">
-    <img src="/88x31/kaamkiya.png" alt="it's me, kaamkiya" />
-    <img src="/88x31/kaamkiya.gif" alt="it's me, kaamkiya" />
-    <img src="/88x31/est2024.png" alt="this website was established in 2024" />
-    <img src="/88x31/he-him.gif" alt="my pronouns are he/him" />
+    {
+      myBadges.map(badge => {
+        return badge.link !== undefined
+          ? <a href={badge.link} target="_blank"><img src={"/88x31/"+badge.filename} alt={badge.alt} /></a>
+          : <img src={"/88x31/"+badge.filename} alt={badge.alt} />
+      })
+    }
     <hr />
     <!--
     Here I'll put buttons for other people's sites that link back to mine
     <img ... />
     <hr />
     -->
-    <a href="https://archlinux.org/" target="_blank"><img src="/88x31/archlinux.gif" alt="I use Arch btw" /></a>
-    <img src="/88x31/canada.gif" alt="Canada" />
-    <img src="/88x31/indieweb.png" alt="The Indie Web" />
-    <img src="/88x31/internetarchive.png" alt="The Internet Archive" />
-    <img src="/88x31/iso8601.png" alt="The best date format is YYYY-MM-DD" />
-    <img src="/88x31/nocookie.gif" alt="This website uses zero cookies" />
-    <img src="/88x31/noerror.gif" alt="Error? What error?" />
-    <img src="/88x31/right2repair.png" alt="I support the right to repair" />
-    <img src="/88x31/underconstruction.gif" alt="Under construction..." />
-    <img src="/88x31/wikipedia.gif" alt="Wikipedia rocks" />
-    <img src="/88x31/www.gif" alt="World Wide Web, connecting people since 1991" />
-    <img src="/88x31/emailme.gif" alt="Email me! kaki@envs.net" />
-    <img src="/88x31/envsnet.png" alt="envs.net" />
-    <img src="/88x31/tildetown.gif" alt="tilde.town" />
-    <img src="/88x31/firefox.gif" alt="Firefox" />
-    <img src="/88x31/carpe_diem.gif" alt="Carpe diem" />
-    <a href="https://hillhouse.neocities.org/cliques/library/"><img src="/88x31/littlepixellibrary.png" alt="Little Pixel Library" /></a>
-    <a href="https://people.pledge.party/" target="_blank"><img src="/88x31/people_pledge.png" alt="People Pledge" /></a>
-    <img src="/88x31/andycarolan_madebyahuman.png" alt="Made by a human" />
+    {
+      randomBadges.map(badge => {
+        return badge.link !== undefined
+          ? <a href={badge.link} target="_blank"><img src={"/88x31/"+badge.filename} alt={badge.alt} /></a>
+          : <img src={"/88x31/"+badge.filename} alt={badge.alt} />
+      })
+    }
   </div>
   <!--
     Partly sourced from https://88x31db.com and
