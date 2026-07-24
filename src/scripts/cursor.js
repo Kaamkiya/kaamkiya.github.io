@@ -16,6 +16,7 @@ if (!matchMedia("prefers-reduced-motion").matches) {
     div.style.top = x + "px";
     div.style.left = x + "px";
     div.style.borderRadius = "1em";
+    div.style.pointerEvents = "none";
     div.style.background = colors[Math.floor(Math.random()*colors.length)];
     document.body.appendChild(div);
 
