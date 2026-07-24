@@ -42,7 +42,9 @@ body {
   font-family: var(--font);
   line-height: 1.75;
   height:100%;
-  cursor: url(/cursor.png), auto;
+  /* TODO: add this back when I have a full set of custom cursors, it doesn't
+   * look or feel good at the moment like this
+   * cursor: url(/cursor.png), auto; */
 }
 
 div#container {
